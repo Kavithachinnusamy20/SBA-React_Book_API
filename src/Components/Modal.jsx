@@ -9,7 +9,7 @@ const Modal = ({ show, item, onClose }) => {
     <div className="overlay">
       <div className="overlay-inner">
         <button className="close" onClick={onClose}>
-          <i className="fas fa-times"></i>
+          <i className="innerclose"> X</i>
         </button>
         <div className="inner-box">
           <img src={thumbnail} alt="" />
@@ -26,7 +26,7 @@ const Modal = ({ show, item, onClose }) => {
             </a>
           </div>
         </div>
-        <h4 className="description">{item.volumeInfo.description}</h4>
+        {/* <h4 className="description">{item.volumeInfo.description}</h4> */}
       </div>
     </div>
   );

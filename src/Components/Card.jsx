@@ -17,7 +17,7 @@ const Card = ({ book }) => {
           key={index}
           className="card"
           onClick={() => {
-            setShow(true);
+            setShow(!show);
             setItem(item);
           }}
           >
