@@ -31,7 +31,7 @@ const App = () => {
    return (
 
     <div className="app">
-      <h1>Search your favorite React books</h1>
+      <h1>Search your favorite books</h1>
       <input
         type="text"   placeholder="Search books"   value={search}   onChange={(e) => setSearch(e.target.value)}
         onKeyPress={searchBook}

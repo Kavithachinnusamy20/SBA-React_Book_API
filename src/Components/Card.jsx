@@ -8,7 +8,7 @@ const Card = ({ book }) => {
   return (
     <>
     {book.map((item, index) => {
-      const thumbnail =  item.volumeInfo.imageLinks?.smallThumbnail;
+      const thumbnail =  item.volumeInfo.imageLinks?.thumbnail;
       const amount = item.saleInfo.listPrice?.amount;
       
       if (thumbnail && amount) {
