@@ -1,5 +1,5 @@
 nav {
-  background-color: #a2d423;
+  background-color: #91df9f;
   padding: 1rem;
   display: flex;
   gap: 1.5rem;
@@ -7,7 +7,7 @@ nav {
 }
 
 nav a {
-  color: #881866;
+  color: #264c2d;
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
@@ -15,7 +15,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #831414;
+  color: #1e341f;
 }
 
 nav a:active {

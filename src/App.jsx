@@ -15,7 +15,14 @@ const App = () => {
       </nav>
 
       <Routes>
-        <Route path="/" element={<div>Welcome to Home</div>} />
+        <Route path="/" element={
+          <div><h1>Welcome to Home</h1>
+          <p><h4>
+            Fiction: Includes various subgenres like historical fiction, fantasy, science fiction, romance, mystery, and more.
+Non-Fiction: Covers a wide range of subjects like history, biography, science, self-help, etc.
+Drama: Plays and scripts for theatrical performance.
+Poetry: Collections of poems.
+Fables, Fairy Tales, Folklore: Traditional stories with morals or fantastical elements..</h4> </p></div>} />
         <Route path="/bookSearch" element={<SearchBook />} />
         <Route path="/about" element={<About />} />
       </Routes>
