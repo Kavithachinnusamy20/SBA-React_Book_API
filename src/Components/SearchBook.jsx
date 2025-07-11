@@ -34,7 +34,7 @@ const SearchBook = () => {
           onKeyDown={searchBook} // updated from onKeyPress (deprecated)
         />
       </div>
-        <div class="container1">
+        <div className="container1">
             <Card book={bookData} />
         </div>
       </div>
