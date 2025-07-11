@@ -1,13 +1,40 @@
-# React + Vite
+netlify link:https://reactbookapik.netlify.app/
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+#Book Explorer
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Book Explorer is a React-based web application that allows users to search for books using the Google Books API. It provides an intuitive interface for discovering book details—including authorship, pricing, and previews—and is built with reusable components, routing, and modern hooks to showcase a clean development structure and polished user experience.
 
-## Expanding the ESLint configuration
+## Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# SBA-React_Book_API
+-  **Book Search**: Type a keyword to fetch up to 40 related books in real time.
+-  **Book Cards**: Display books with thumbnails, titles, and list prices.
+-  **Modal Details**: Click any book to open a modal showing more metadata like publisher, authors, published date, and a direct preview link.
+-  **Routing with React Router**: Includes navigation across Home, Book Search, and About pages.
+-  **Styled Components**: Clean layout designed using custom CSS classes.
+                                 
+React          - UI library for building interactive views  
+React Router   - Client-side navigation                     
+Axios          - Fetching book data from external API       
+Google Books API - External data provider for book metadata 
+
+## API Usage
+
+The app uses Google Books API to retrieve books based on user input. Example request format:
+
+ The API key is hardcoded during development. 
+
+##  How It Works
+
+- The user enters a search keyword and presses **Enter** or clicks **Search**.
+- The app builds a URL dynamically using `search` state and calls Google Books API via Axios.
+- Valid results (with thumbnails and prices) are mapped into card components.
+- Clicking a card opens a modal view with extended information.
+- Routing lets users explore different parts of the site without page reloads.
+
+---
+## Upcoming Enhancements
+
+-  Autocomplete suggestions for search input
+-  Loading during API fetch
+-  Deployment on Netlify 
