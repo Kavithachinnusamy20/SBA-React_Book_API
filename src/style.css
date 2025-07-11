@@ -62,14 +62,15 @@ html{
     margin-left: 35px;
     font-family: 'Bodoni Moda', serif;
 }
-.app{
-    display: flex;
+.search{
+    /* display: flex; */
    
     align-items: center;
     justify-content: center;
     
 }
 .search input{
+    
     outline: 0;
     border: 0;
     width: 350px;
@@ -97,13 +98,14 @@ html{
     grid-gap:20px;
     box-sizing: border-box; */ 
 
-     display: flex;
-     flex-wrap: wrap;       /* Wrap to next row if space runs out */
-    justify-content: space-around; /* Or use space-between / center */
-    gap: 20px;              /* Optional: spacing between cards */
+    
+      display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
     padding: 20px;
 
 }
+
 .card{
     background-color: var(--secondary-color);
     border-radius: 1rem;
@@ -133,8 +135,8 @@ html{
 }
 .card .bottom .amount{
     position: absolute;
-    /* bottom: 10px; */
-    /* left: 10px; */
+    bottom: 10px;
+    left: 10px;
     right: 10px;
     background-color: var(--primary-color);
     color: var(--secondary-color);

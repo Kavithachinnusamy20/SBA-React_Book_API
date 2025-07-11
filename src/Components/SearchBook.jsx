@@ -23,16 +23,17 @@ const SearchBook = () => {
   };
 
   return (
-    <div className="app">
-      <h1>Search your favorite books</h1>
-      <input
-        type="text"
-        placeholder="Search books"
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        onKeyDown={searchBook} // updated from onKeyPress (deprecated)
-      />
-      
+    <div className="search">
+      <div>
+        <h1>Search your favorite books</h1>
+        <input
+          type="text"
+          placeholder="Search books"
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          onKeyDown={searchBook} // updated from onKeyPress (deprecated)
+        />
+      </div>
         <div class="container1">
             <Card book={bookData} />
         </div>

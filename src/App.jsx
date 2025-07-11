@@ -2,7 +2,7 @@ import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
 import React from 'react';
 
 import SearchBook from './Components/SearchBook';
-import About from '../Pages/About'; // Make sure this component exists
+import About from './Pages/About';  
 import './index.css';
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
     <BrowserRouter>
       <nav className="navbar">
         <Link to="/">Home</Link>
-        <Link to="/bookSearch">BookSearch</Link>
+        <Link to="/bookSearch">Books</Link>
         <Link to="/about">About</Link>
       </nav>
 
