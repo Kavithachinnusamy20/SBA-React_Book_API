@@ -5,7 +5,7 @@ import About from './pages/About';
 import BookDetails from './pages/BookDetails'; // Create this component
 import './index.css';
 
-function Home() {
+function Home() { 
   return (
     <BrowserRouter>
     <Router>
