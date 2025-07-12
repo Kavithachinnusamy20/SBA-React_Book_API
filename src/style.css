@@ -16,9 +16,10 @@ html{
 }
 
  .innerclose{
-    background-color: bisque;
+    background-color: rgb(21, 104, 47);
     align-items: center;
     background: solid 2px;
+  
     
   }
 .header{
@@ -41,33 +42,43 @@ html{
     clip-path: circle(60% at left 300px);
     z-index: -1;
 }
-.row2{
-    position: absolute;
-    top:10px;
-    right: 150px;
-    text-align: center;
-}
-.row2 h2{
-    font-size: 3rem;
-    margin-top: 20px;
-    margin-bottom: 15px;
-}
-.row2 img{
-    margin-top: 30px;
-    width: 250px;
-}
-.row1 h1{
+
+ h1{
     font-size: 3rem;
     text-align: center;
     margin-left: 35px;
     font-family: 'Bodoni Moda', serif;
+} 
+.search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem auto;
 }
-.search{
-    /* display: flex; */
-   
-    align-items: center;
-    justify-content: center;
-    
+
+.search h1 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.searchBox {
+  width: 300px;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  text-align: center; /* optional, if you want the text inside to be centered */
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 .search input{
     
@@ -81,25 +92,10 @@ html{
     font-weight: bold;
   
 }
-.search button{
-    outline: none;
-    border: none;
-    height: 35px;
-    padding: 0 0.5rem;
-}
-.container1{
-    /* width: 65%;
-    margin: 0 auto;
-    margin-top: 25px;
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    /* display: grid; */
-    /* grid-template-columns: repeat(auto-fit,minmax(200px,0.5fr));
-    grid-gap:20px;
-    box-sizing: border-box; */ 
 
+.container1{
     
-      display: grid;
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     padding: 20px;
@@ -191,14 +187,14 @@ html{
     color: green;
 }
 .overlay-inner .inner-box h4{
-    color: blue;
+    color: rgb(12, 99, 79);
 }
 .overlay-inner .inner-box button{
     outline: none;
     border: none;
     width: 100px;
     border-radius: 5px;
-    background-color: #24a0ed;
+    background-color: #156b39;
     color: white;
     font-weight: bold;
     padding: 0.3rem 0.5rem;
@@ -211,7 +207,7 @@ html{
 
  button {
   padding: 10px 20px;
-  background-color: #4CAF50; /* Green background */
+  background-color:  #156b39; /* Green background */
   color: white;
   border: none;
   border-radius: 5px;
@@ -222,5 +218,5 @@ html{
 }
 
 button:hover {
-  background-color: #45a049; /* Darker green on hover */
+  background-color: #58f57a; /* Darker green on hover */
 }

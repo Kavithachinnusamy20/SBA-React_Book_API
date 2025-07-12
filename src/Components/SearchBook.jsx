@@ -34,11 +34,12 @@ const SearchBook = () => {
   };
   
   return (
-    <div className="search">
+    
     <div>
+    <div className="search">
     <h1>Search your favorite books</h1>
     <input
-    type="text"
+    type="text" className ="searchBox"
     placeholder="Search books"
     value={search}
     onChange={(e) => setSearch(e.target.value)}
